@@ -1,0 +1,275 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #faf2f2;
+    color: #383535;
+}
+
+
+.sidebar {
+    width: 70px;
+    height: 100vh;
+    background-color: #1e242b;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.sidebar-icons a {
+    color: #8c9398;
+    font-size: 20px;
+    display: block;
+    margin-bottom: 35px;
+    transition: color 0.3s;
+}
+
+.sidebar-icons a:hover, .sidebar-icons a.active {
+    color: #ffffff;
+}
+
+
+.main-content {
+    margin-left: 70px;
+}
+
+
+.hero-section {
+    position: relative;
+    height: 60vh;
+    background: url('../pic/download\ \(8\).jpg') no-repeat center center/cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-text {
+    position: relative;
+    z-index: 2;
+    color: #ffffff;
+}
+
+.hero-text h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.hero-text p {
+    font-size: 1.2rem;
+    opacity: 0.8;
+}
+
+.btn-continue {
+    display: inline-block;
+    padding: 10px 30px;
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
+    transition: 0.3s, color 0.3s;
+}
+
+.btn-continue:hover {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+
+.gallery-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    margin-bottom: 50px;
+}
+
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery-item {
+    height: 220px;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+.btn-gallery, .btn-send {
+    background-color: #25aae1;
+    color: #ffffff;
+    border: none;
+    padding: 12px 35px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 40px;
+    transition:  0.3s;
+}
+
+.btn-gallery:hover, .btn-send:hover {
+    background-color: #1b8cb8;
+}
+
+/* 4. قسم الفوتر والتواصل */
+.footer-section {
+    background-color: #f4f5f7;
+    border-top: 1px solid #e1e4e8;
+    padding: 80px 20px 30px 20px;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+
+.footer-about, .footer-contact {
+    flex: 1;
+    min-width: 300px;
+}
+
+.footer-title {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+    color: #2b303a;
+}
+
+.footer-p {
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.social-icons h4 {
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.icons-row a {
+    color: #8c9398;
+    font-size: 20px;
+    margin-right: 20px;
+    transition: color 0.3s;
+}
+
+.icons-row a:hover {
+    color: #25aae1;
+}
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form-group label {
+    color: #777;
+}
+
+.custom-input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    font-size: 1rem;
+    outline: none;
+}
+
+.custom-input:focus {
+    border-color: #25aae1;
+}
+
+.btn-send {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.copyright-text {
+    text-align: center;
+    color: #999;
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #e1e4e8;
+    font-size: 0.9rem;
+}
+
+
+@media (max-width: 768px) {
+    
+    .sidebar {
+        width: 100%;
+        height: 60px;
+        flex-direction: row;
+        padding-top: 0;
+        padding: 0 20px;
+    }
+    
+    .sidebar-icons {
+        display: flex;
+        width: 100%;
+        justify-content: space-around;
+    }
+    
+    .sidebar-icons a {
+        margin-bottom: 0;
+    }
+    
+    .main-content {
+        margin-left: 0;
+        padding-top: 60px; 
+    }
+
+    .hero-text h1 {
+        font-size: 2.2rem;
+    }
+}

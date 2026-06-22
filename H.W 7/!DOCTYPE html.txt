@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snapshot Template - Pure CSS</title>
+   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+   
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    
+    <nav class="sidebar">
+        <div class="sidebar-icons">
+            <a href="#hero-section" class="active"><i class="fa-solid fa-house"></i></a>
+            <a href="#gallery-section"><i class="fa-solid fa-camera"></i></a>
+            <a href="#footer-section"><i class="fa-solid fa-file-lines"></i></a>
+        </div>
+    </nav>
+
+    
+    <div class="main-content">
+
+       
+        <section id="hero-section" class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="hero-text">
+                <h1>Hey, I'm Aya</h1>
+                <p>A fully responsive gallery template by Aya</p>
+                <a href="#gallery-section" class="btn-continue">Continue</a>
+            </div>
+        </section>
+
+       
+        <section id="gallery-section" class="gallery-section">
+            <h2 class="section-title">What's New</h2>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item"><img src="../pic/mmm.jpg" alt="Gallery Image"></div>
+                <div class="gallery-item"><img src="../pic/download (1).jpg" alt="Gallery Image"></div>
+                <div class="gallery-item"><img src="../pic/download (2).jpg" alt="Gallery Image"></div>
+                <div class="gallery-item"><img src="../pic/download (3).jpg" alt="Gallery Image"></div>
+                <div class="gallery-item"><img src="../pic/download (4).jpg" alt="Gallery Image"></div>
+                <div class="gallery-item"><img src="../pic/download (5).jpg" alt="Gallery Image"></div>
+                <div class="gallery-item"><img src="../pic/ppp.jpg" alt="Gallery Image"></div>
+                <div class="gallery-item"><img src="../pic/sunset.jpg" alt="Gallery Image"></div>
+            </div>
+
+            <button class="btn-gallery">Full Gallery</button>
+        </section>
+
+        
+          <section id="footer-section" >
+        <footer class="footer-section">
+            <div class="footer-container">
+                
+              
+                <div class="footer-about">
+                    <h3 class="footer-title">About Me</h3>
+                    <p class="footer-p">
+                       This is my gallary to more photo u can send me =>
+                    </p>
+                    <p class="footer-p">
+                        I want a Pretty Pic .
+                    </p>
+                    <div class="social-icons">
+                        <h4>Follow Me</h4>
+                        <div class="icons-row">
+                            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+               
+                <div class="footer-contact">
+                    <h3 class="footer-title">Get in Touch</h3>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" class="custom-input">
+                        </div>
+                        <div class="form-group">
+                            <label>Email</label>
+                            <input type="email" class="custom-input">
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea class="custom-input" rows="5"></textarea>
+                        </div>
+                        <button type="submit" class="btn-send">Send Message</button>
+                    </form>
+                </div>
+
+            </div>
+            
+            
+           
+            <div class="copyright-text">
+                ©Aya Alsloul<span>🦋</span>
+            </div>
+
+        </footer>
+
+    </div>
+
+</body>
+</html>
